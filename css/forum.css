@@ -1,0 +1,160 @@
+.topic-container {
+    background-color: rgba(0, 0, 0, .15);
+    padding: 20px;
+    position: relative;
+    background: #ededed;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    margin: 32px 0;
+}
+.topic-container:after, .topic-container:before {
+    top: 100%;
+    left: 75px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.topic-container:after {
+    border-color: rgba(237, 237, 237, 0);
+    border-top-color: #ededed;
+    border-width: 20px;
+    margin-left: -20px;
+}
+.topic-container:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-top-color: #ddd;
+    border-width: 24px;
+    margin-left: -24px;
+}
+.topic-meta {
+    line-height: 1;
+    min-height: 48px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.topic-meta img {
+    float: left;
+    margin-right: 5px;
+}
+.topic-meta span {
+    font-style: italic;
+    margin-bottom: 9px;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 14px;
+}
+.comments-container {
+    margin-top: 32px;
+}
+.comments-container > ul {
+    list-style: none;
+    margin: 0 0 32px;
+    padding: 0;
+}
+.comments-container li .comment-body {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    border-left: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    margin: 32px 0 10px;
+
+}
+.comments-container li .comment-body:after {
+    display: block;
+    top: calc(100% + 1px);
+    left: 75px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: rgba(0, 0, 0, .15);
+    border-width: 12px;
+    margin-left: -12px;
+}
+.hoofdonderwerp {
+    border-bottom: 3px solid #3AA6AE;
+    margin-bottom: 15px;
+    font-size: 26px;
+    padding-bottom: 10px;
+    color: #EE5B2F;
+}
+.panel {
+    margin-bottom: 32px;
+}
+.content .list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-group-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    padding: 0 15px;
+}
+.list-group-item a {
+    display: block;
+    text-decoration: none;
+}
+.list-group-item:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, .5)
+}
+.list-group-item:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .10);
+}
+.list-group-item {
+    line-height: 40px;
+}
+.list-group-item img {
+    width: 32px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.list-group-item a span {
+    float:right;
+    color: #EE5B2F;
+}
+.content .list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-group-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    padding: 5px 15px;
+}
+.list-group-item a {
+    display: block;
+    text-decoration: none;
+}
+.list-group-item:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, .5)
+}
+.list-group-item > span {
+    color: #000;
+    border-radius: 10px;
+    float: right;
+    font-size: .85em;
+    height: 20px;
+    min-width: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    text-align: center;
+    margin: 3px 5px 0;
+    text-transform: uppercase;
+}
+.list-group-item > span.nieuw {
+    color: #3AA6AE;
+}
+.list-group-item > span.gesloten {
+    color: #444;
+}
+.list-group-item > span.hot {
+    color: #EE5B2F;
+}
